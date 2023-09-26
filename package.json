@@ -1,0 +1,29 @@
+{
+  "name": "Spinjer",
+  "version": "1.1.1",
+  "description": "The application displays the quality of your internet connection",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder",
+    "packager": "electron-packager . SPinjer --platform=darwin --arch=x64 --out=dist/ --overwrite"
+  },
+  "build": {
+    "appId": "com.example.yourapp",
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    }
+  },
+  "keywords": [],
+  "author": "Kikudjira",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.2.0",
+    "electron-builder": "^24.4.0",
+    "electron-packager": "^17.1.1"
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0"
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .setting {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .setting img {
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+        }
+        .setting input {
+            margin-left: 10px;
+            width: 60px;
+        }
+        .noUi-connects {
+            background: #eee;
+        }
+        .noUi-connect:nth-child(1) {
+            background: green;
+        }
+        .noUi-connect:nth-child(2) {
+            background: yellow;
+        }
+        .noUi-connect:nth-child(3) {
+            background: orange;
+        }
+        .noUi-connect:nth-child(4) {
+            background: red;
+        }
+        #time-slider {
+        margin-top: 60px;
+        margin-bottom: 40px;
+        }
+    </style>
+    <script defer src="settings.js"></script>
+</head>
+<body>
+    <h1>Settings</h1>
+    <div id="time-slider"></div>
+    <form id="settings-form">
+        <div class="setting">
+            <img src="img/icon_2.png" alt="Icon 2">
+            <span>Up To: </span>
+            <input type="number" id="time2" name="time2" min="0" value="51">
+        </div>
+        <div class="setting">
+            <img src="img/icon_3.png" alt="Icon 3">
+            <span>Up To: </span>
+            <input type="number" id="time3" name="time3" min="0" value="151">
+        </div>
+        <div class="setting">
+            <img src="img/icon_4.png" alt="Icon 4">
+            <span>Up To: </span>
+            <input type="number" id="time4" name="time4" min="0" value="351">
+        </div>
+        <div class="setting">
+            <img src="img/icon_5.png" alt="Icon 5">
+            <span>And More</span>
+        </div>
+        <div class="setting">
+            <span>IP Address:</span>
+            <input type="text" id="ip" name="ip" value="8.8.8.8">
+        </div>        
+        <input type="submit" id="save-button" value="Save" disabled>
+    </form>
+</body>
+</html>
